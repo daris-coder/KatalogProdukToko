@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kelas.controller.DetailController">
+    <top><HBox spacing="16" styleClass="header"><Label text="Detail Produk" styleClass="title"/><Button text="Lihat Daftar" onAction="#bukaDaftar"/></HBox></top>
+    <center>
+        <VBox spacing="16" styleClass="page">
+            <VBox spacing="10" styleClass="card">
+                <Label text="Kode" styleClass="muted"/><Label fx:id="kodeLabel" styleClass="subtitle"/>
+                <Label text="Nama Produk" styleClass="muted"/><Label fx:id="namaLabel"/>
+                <Label text="Kategori" styleClass="muted"/><Label fx:id="kategoriLabel"/>
+                <Label text="Harga" styleClass="muted"/><Label fx:id="hargaLabel" styleClass="title"/>
+                <Button text="Tambah Produk Lain" onAction="#tambahLagi" styleClass="button-primary"/>
+                <Label fx:id="pesanLabel" styleClass="error"/>
+            </VBox>
+        </VBox>
+    </center>
+</BorderPane>
